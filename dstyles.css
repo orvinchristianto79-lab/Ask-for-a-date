@@ -1,0 +1,94 @@
+body{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background: linear-gradient(
+        135deg,
+        #cffafe,
+        #22d3ee
+    );
+
+    font-family: Arial, sans-serif;
+}
+.date-card{
+    background: rgba(255,255,255,0.95);
+
+    padding: 3rem;
+
+    width: 90%;
+    max-width: 500px;
+
+    border-radius: 25px;
+
+    text-align:center;
+
+    box-shadow:
+        0 15px 35px #ffff;
+
+    backdrop-filter: blur(10px);
+
+    animation: fadeIn 0.8s ease;
+}
+.date-card h1{
+    color:#0f172a;
+    margin-bottom:1rem;
+}
+.date-card h2{
+    color:#475569;
+    margin-bottom:2rem;
+    font-weight:500;
+}
+#datePicker{
+    width:100%;
+
+    padding:15px;
+
+    font-size:18px;
+
+    border:2px solid #cbd5e1;
+
+    border-radius:12px;
+
+    margin-bottom:20px;
+}
+#submitDate{
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#F875AA;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+#submitDate:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 10px 20px #F875AA;
+}
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}

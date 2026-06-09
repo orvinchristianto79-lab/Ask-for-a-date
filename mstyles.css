@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:20px;
+
+    background:linear-gradient(
+        to right bottom,
+        #cffafe,
+        #22d3ee
+    );
+
+    font-family:Arial, sans-serif;
+}
+.mood-card{
+    width:100%;
+    max-width:700px;
+
+    background:white;
+
+    padding:3rem;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,0.15);
+}
+.mood-card h1{
+    color:#0f172a;
+    margin-bottom:10px;
+}
+
+.mood-card p{
+    color:#64748b;
+    margin-bottom:30px;
+}
+.mood-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(2, 1fr);
+
+    gap:20px;
+}
+.mood-option{
+    padding:25px;
+
+    border:2px solid #e2e8f0;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+.mood-option:hover{
+    transform:translateY(-5px);
+
+    border-color:#22d3ee;
+
+    box-shadow:
+    0 10px 20px rgba(34,211,238,0.25);
+}
+.emoji{
+    font-size:60px;
+    margin-bottom:10px;
+}
+.mood-option span{
+    font-size:18px;
+    font-weight:600;
+
+    color:#334155;
+}
+.goodbye-message{
+    height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+}
